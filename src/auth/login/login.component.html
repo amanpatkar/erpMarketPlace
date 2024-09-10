@@ -1,0 +1,32 @@
+<div class="authParent flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-orange-600 p-4">
+  <div class="relative flex flex-col bg-transparent border border-zinc-500 w-full max-w-lg rounded-xl transition-all duration-500 transform hover:scale-105 shadow-2xl">
+    <div class="relative m-4 flex justify-center items-center text-white h-24 rounded-md bg-gradient-to-r from-blue-600 to-orange-700 shadow-lg">
+      <h3 class="text-3xl font-bold">Sign In</h3>
+    </div>
+    <div class="flex flex-col gap-6 p-6 bg-white bg-opacity-0 rounded-xl">
+      <div class="w-full">
+        <label class="block mb-2 text-sm font-semibold text-white">Email</label>
+        <input type="email" class="w-full bg-transparent placeholder:text-slate-300 text-white text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-200 hover:border-slate-400 shadow-sm" placeholder="Your Email" />
+      </div>
+
+      <div class="w-full">
+        <label class="block mb-2 text-sm font-semibold text-white">Password</label>
+        <input type="password" class="w-full bg-transparent placeholder:text-slate-300 text-white text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-200 hover:border-slate-400 shadow-sm" placeholder="Your Password" />
+      </div>
+
+      <div class="flex items-center space-x-2">
+        <input type="checkbox" class="h-5 w-5 text-blue-600 bg-transparent border-gray-300 rounded focus:ring-blue-500" id="check-2">
+        <label class="cursor-pointer text-white text-sm" for="check-2">Remember Me</label>
+      </div>
+    </div>
+
+    <div class="p-6 pt-0">
+      <button class="w-full rounded-md bg-gradient-to-r from-blue-600 to-orange-600 py-2 px-4 border border-transparent text-center text-sm text-white font-semibold transition-all transform duration-500 hover:scale-105 hover:bg-blue-700 focus:ring-2 focus:ring-blue-400 active:bg-blue-800 disabled:opacity-50" type="button" (click)="onSubmit()">Sign In</button>
+      <p class="flex justify-center mt-6 text-sm text-white">
+        Already have an account?
+        <a (click)="onSignIn()" class="ml-1 text-sm font-semibold text-blue-200 underline hover:text-blue-300">Sign up</a>
+      </p>
+    </div>
+  </div>
+
+</div>
